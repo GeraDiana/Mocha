@@ -4,7 +4,6 @@ function sum(a,b){
 function mult(a,b){
     return a*b;
 
-
 }
 
 module.exports = {sum, mult};
