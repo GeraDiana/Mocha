@@ -1,21 +1,15 @@
-const assert= require('assert');
-const {sum,mult} = require('../index.js');
+const assert = require('assert');
+const {expect} = require('chai');
+const {sum, mult, power, concat, no, reverse} = require('../index.js');
 
-describe('function sum',()=>{
-    it('should  sum equal 10', ()=>{
-        assert.equal(sum( 2,4) , 6);
-    })
-    it('should  sum equal 0',function () {
-        assert.notEqual(sum(  2,  4), 0);
-    })
+describe('function sum', () => {
+    it('sum 2 and 3 should equal 5', () => {
+        assert.equal(sum(2, 3), 5);
+    });
+    expect(sum (2, 4)).to.eq(6)
 
+    it('sum 2 and 3 should not equal 5', () => {
+        assert.notEqual(sum(2, 3), 0)
+    });
 })
-it('should  sum equal 10', ()=>{
-    assert.equal(sum( 2,4) , 6);
-})
-it('should  sum equal 0',function () {
-    assert.notEqual(sum(  2,  4), 0);
-})
-it('should mult a equal 8',()=>{
-    assert.equal(mult(2 ,4), 8);
-// });
+
