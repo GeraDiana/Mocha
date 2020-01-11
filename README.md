@@ -1,3 +1,3 @@
 #### Unit testing
-+ Functions
-+ Tests
++ [Functions](index.js)
++ [Tests](test/index.spec.js)
