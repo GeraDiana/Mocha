@@ -1,6 +1,7 @@
 function sum(a,b){
   return a + b;
 }
+
 function mult(a,b){
   return a*b;
 }
@@ -11,7 +12,16 @@ function isAdult(age){
   else return false;
 }
 
-module.exports = {sum, mult, isAdult};
+function isEvenNumber(num) {
+  return (num % 2 === 0);
+}
+
+function isOddNumbers(num) {
+  return(num % 2===1);
+}
+
+
+module.exports = {sum, mult, isAdult, isEvenNumber, isOddNumbers, };
 
 
 
