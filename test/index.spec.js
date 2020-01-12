@@ -17,14 +17,20 @@ describe('function sum', () => {
 });
 
 describe ('function mult', () => {
-  it('should function mult equals 10', () => {
+  it('should function mult equals 14', () => {
     assert.equal(mult(2, 7), 14);
+  });
+  it('should function mult equals 10', () => {
+    assert.equal(mult(2, 5), 10);
   });
 });
 
 describe('function isAdult', () => {
   it('should function isAdult should be true',() => {
     assert.equal(isAdult(21), true);
+  });
+  it('should function isAdult should be false for age 10',() => {
+    assert.equal(isAdult(10), false);
   });
 });
 
@@ -40,5 +46,8 @@ describe ('finction isEvenNumber', () => {
 describe('function isOddNumbers',  () => {
   it ('should function even or Odd Numbers', () =>{
     assert.equal(isOddNumbers(7),true);
+  });
+  it ('should function even or Odd Numbers', () =>{
+    assert.equal(isOddNumbers(8),false);
   });
 });
